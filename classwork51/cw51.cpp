@@ -63,5 +63,13 @@ int main()
 
 	cout << str1 << endl;
 
+	const int SIZE = 100;
+        char str[SIZE];  //string in stack
+
+        cout << "Enter a string: ";
+        cin.getline(str, SIZE);
+
+        cout << "Your string: " << str << endl;
+
 	return 0;
 }
