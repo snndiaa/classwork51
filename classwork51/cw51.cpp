@@ -32,6 +32,16 @@ int my_strcpy(char* dest, const char* src) //2
 	return 0;
 }
 
+int my_strcmp(const char* str1, const char* str2)
+{
+	while (*str1 && (*str1 == *str2))
+	{
+		str1++;
+		str2++;
+	}
+	return *str1 - *str2;
+}
+
 int main()
 {
 	/*const int N = 100;
